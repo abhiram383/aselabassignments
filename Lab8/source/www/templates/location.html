@@ -1,0 +1,36 @@
+<ion-view title="Location" id="page4">
+    <ion-content padding="true" style="background: url(img/homepagepic.jpg) no-repeat center;background-size:cover;" class="has-header">
+          <button id="joinClass-button6" class="button button-positive  button-block" ng-click="getCurrentPosition()" >show location</button>
+        
+<!--
+        <form id="joinClass-form4" class="list">
+            <h4 style="color:red"> 39.063612 </h4>
+                <label class="item item-input" id="joinClass-input2">
+                <input id="placeName" type="text" placeholder="">
+            </label>
+           
+        </form>
+-->
+        
+        <div id="listView">
+         <TABLE BORDER=2 CELLPADDING=4> <TR> <TH style="color: Red;" COLSPAN=2> Location </TH> </TR>
+                <TR> <TD style="color: blue;">Latitude:</TD> <TD>{{position.lat}}</TD> </TR>
+                <TR> <TD style="color: blue;">longitude</TD> <TD>{{position.log}}</TD> </TR>
+
+            
+              </TABLE>
+        </div>
+	    
+        <button id="joinClass-button6" class="button button-positive  button-block" ng-click="getCurrentPosition()" >show weather for present location</button>
+        
+        
+        <div id="listView">
+         <TABLE BORDER=2 CELLPADDING=4> <TR> <TH style="color: Red;" COLSPAN=2> Weather </TH> </TR>
+                <TR> <TD style="color: blue;">Weather:</TD> <TD>{{presentposition.weather}}</TD> </TR>
+                <TR> <TD style="color: blue;">temperature:</TD> <TD>{{presentposition.temp}}</TD> </TR>
+
+            
+              </TABLE>
+        </div>
+    </ion-content>
+</ion-view>
